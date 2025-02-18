@@ -342,3 +342,10 @@ C:\abc\ChatBackenUsertoUser-main\MyChatApp\obj\Debug\net8.0\refint\MyChatApp.dll
 C:\abc\ChatBackenUsertoUser-main\MyChatApp\obj\Debug\net8.0\MyChatApp.pdb
 C:\abc\ChatBackenUsertoUser-main\MyChatApp\obj\Debug\net8.0\MyChatApp.genruntimeconfig.cache
 C:\abc\ChatBackenUsertoUser-main\MyChatApp\obj\Debug\net8.0\ref\MyChatApp.dll
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\web.config
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\appsettings.Development.json
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\appsettings.json
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\MvcTestingAppManifest.json
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\MyChatApp.deps.json
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\bin\Debug\net8.0\out\MyChatApp.runtimeconfig.json
+C:\abc\ChatBackenUsertoUser-main\MyChatApp\obj\Debug\net8.0\MyChatApp.sourcelink.json
