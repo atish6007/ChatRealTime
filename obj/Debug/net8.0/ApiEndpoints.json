@@ -1,0 +1,55 @@
+[
+  {
+    "ContainingType": "RealTimeChatApplication.Controllers.MessageController",
+    "Method": "GetMessages",
+    "RelativePath": "api/Message/{user1Id}/{user2Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user1Id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "user2Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChatApplication.Controllers.MessageController",
+    "Method": "GetConversations",
+    "RelativePath": "api/Message/conversations/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChatApplication.Controllers.MessageController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Message/send-chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "RealTimeChatApplication.Model.Message",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

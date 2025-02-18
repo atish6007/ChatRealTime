@@ -1,0 +1,118 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RealTimeChatAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Message/{user1Id}/{user2Id}": {
+      "get": {
+        "tags": [
+          "Message"
+        ],
+        "parameters": [
+          {
+            "name": "user1Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user2Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Message/send-chat": {
+      "post": {
+        "tags": [
+          "Message"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Message"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Message"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Message"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Message/conversations/{userId}": {
+      "get": {
+        "tags": [
+          "Message"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Message": {
+        "type": "object",
+        "properties": {
+          "fromUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "toUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageContent": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
